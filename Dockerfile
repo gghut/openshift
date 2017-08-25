@@ -5,6 +5,8 @@ WORKDIR /app
 
 COPY ./* /app/
 
+VARIABLES APP_SCRIPT
+
 RUN pip install -r requirements.txt
 
 CMD python controller.py
